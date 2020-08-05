@@ -76,7 +76,6 @@
 				8CF74119AABCB7B92138AEB0 /* Pods-CIStudiesTests.debug.xcconfig */,
 				86F024DD769167CF02FDA406 /* Pods-CIStudiesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
