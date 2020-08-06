@@ -46,12 +46,4 @@ platform :ios do
     )
   end
 
-  after_all do |lane, options|
-    if lane == :pull_request_verification
-       if danger_token_available?
-         run_danger
-       end
-    end
-  end
-
 end
