@@ -11,6 +11,7 @@ platform :ios do
       scheme: "CIStudies",
       device: "iPhone 11"
     )
+    run_tests(scheme: "CIStudies")
 
   end
 
@@ -22,12 +23,8 @@ platform :ios do
   )
   end
 
-  desc "Run tests"
-  lane :tests do
-    run_tests(scheme: "CIStudies")
-  end
 
-  desc "Build App, Testflight"
+ desc "Build App, Testflight"
   lane :beta do
     sync_code_signing(type: "appstore")    # see code signing guide for more information
     build_app(scheme: "CIStudies")
