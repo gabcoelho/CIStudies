@@ -1,10 +1,10 @@
 name: CIStudies PR Danger
 
 on:
-   pull_request:
-       types: [edited, synchronize, reopened, opened]
+   push:
+       #types: [edited, synchronize, reopened, opened]
        branches:
-       - master
+            - master
 jobs:
     danger-pr:
         name: Danger PR
