@@ -32,8 +32,8 @@ jobs:
                 run: brew install swiftlint
 
             -   name: execute Fastlane
-                #env:
-                    #GITHUB_USER: ${{ secrets.NAME_REPO_TOKEN }}
-                    #GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-                    #CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+                env:
+                    GITHUB_USER: ${{ secrets.NAME_REPO_TOKEN }}
+                    GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+                    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
                 run: bundle exec fastlane ios pull_request_verification
