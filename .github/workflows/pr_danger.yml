@@ -1,7 +1,7 @@
 name: CIStudies PR Danger
 
 on:
-   push:
+   pull_request:
        types: [edited, synchronize, reopened, opened]
        branches:
             - master
