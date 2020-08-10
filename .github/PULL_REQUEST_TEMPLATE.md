@@ -10,4 +10,4 @@
 
 ## Tests
 
-*Replace this paragraph with a list of the tests that you added or changed as part of this PR. 
+*Replace this paragraph with a list of the tests that you added or changed as part of this PR.*
