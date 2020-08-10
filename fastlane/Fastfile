@@ -48,7 +48,7 @@ platform :ios do
     danger_file_path = options[:danger_file_path] || lane_context[SharedValues::PLATFORM_NAME].to_s
     danger(
       danger_id: danger_id,
-      dangerfile: "danger/#{danger_file_path}/Dangerfile",
+      dangerfile: "Dangerfile",
       github_api_token: ENV["GITHUB_TOKEN"],
       verbose: true
     )
