@@ -12,7 +12,7 @@ platform :ios do
       device: "iPhone 11"
     )
     run_tests(scheme: "CIStudies")
-
+    run_danger
   end
 
   desc "Run iOS SwiftLint"
@@ -40,6 +40,17 @@ platform :ios do
     increment_build_number(
        build_number: app_store_build_number + 1,
        xcodeproj: "CIStudies.xcodeproj"
+    )
+  end
+
+  lane :run_danger do |options|
+    danger_id = options[:danger_id] || lane_context[SharedValues::PLATFORM_NAME].to_s
+    danger_file_path = options[:danger_file_path] || lane_context[SharedValues::PLATFORM_NAME].to_s
+    danger(
+      danger_id: danger_id,
+      dangerfile: "danger/#{danger_file_path}/Dangerfile",
+      github_api_token: ENV["GITHUB_TOKEN"],
+      verbose: true
     )
   end
 
