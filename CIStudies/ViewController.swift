@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import Beagle
 
 class ViewController: UIViewController {
 
+    var viewC: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewC = UIView()
     }
-
-
 }
 
