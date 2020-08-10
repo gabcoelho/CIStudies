@@ -44,8 +44,8 @@ platform :ios do
   end
 
   lane :run_danger do |options|
-    danger_id = options[:danger_id] || lane_context[SharedValues::PLATFORM_NAME].to_s
-    danger_file_path = options[:danger_file_path] || lane_context[SharedValues::PLATFORM_NAME].to_s
+    danger_id = options[:danger_id] || 
+    danger_file_path = options[:danger_file_path]
     danger(
       danger_id: danger_id,
       dangerfile: "Dangerfile",
