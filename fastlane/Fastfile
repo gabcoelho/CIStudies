@@ -1,5 +1,7 @@
 default_platform(:ios)
 
+workspace = "CIStudies.xcworkspace/"
+
   desc "Pull Request verification"
   lane :pull_request_verification do 
     xcversion(version: "~> 11.5.0")
