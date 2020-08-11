@@ -8,7 +8,7 @@ workspace = "CIStudies.xcworkspace/"
     iOSSwiftLint
     cocoapods
     scan(
-      workspace: "CIStudies.xcworkspace/",
+      workspace: workspace,
       scheme: "CIStudies",
       device: "iPhone 11"
     )
