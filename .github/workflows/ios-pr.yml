@@ -20,7 +20,7 @@ jobs:
                 uses: actions/cache@v2
                 with:
                     path: ~/.gem
-                    key: ${{ runner.os }}-build-${{ fastlane-cache }}-${{ hashFiles('Gemfile.lock') }}
+                    key: ${{ runner.os }}-gem-${{ hashFiles('Gemfile.lock') }}
          
             -   name: Install Fastlane
                 run: bundle config set path '~/.gem' && bundle install
