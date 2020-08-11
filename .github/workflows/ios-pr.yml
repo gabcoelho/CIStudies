@@ -31,4 +31,4 @@ jobs:
             -   name: execute Fastlane
                 env:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                run: bundle exec fastlane ios pull_request_verification
+                run: bundle exec fastlane pull_request_verification
