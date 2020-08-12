@@ -17,7 +17,7 @@ workspace = "CIStudies.xcworkspace/"
   end
 
   desc "Run iOS SwiftLint"
-  def runSwiftLint do
+  def runSwiftLint()
       swiftlint(
         mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
         ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
