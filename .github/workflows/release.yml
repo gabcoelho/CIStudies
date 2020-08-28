@@ -19,10 +19,10 @@ jobs:
               
             - name: Deploy new version
               env:
-                REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-                NAME_REPO_TOKEN: ${{ secrets.NAME_REPO_TOKEN }}
-                GITHUB_USER: ${{ secrets.NAME_REPO_TOKEN }}
+                #REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+                #NAME_REPO_TOKEN: ${{ secrets.NAME_REPO_TOKEN }}
+                #GITHUB_USER: ${{ secrets.NAME_REPO_TOKEN }}
                 GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-                COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-              run: bundle exec fastlane deploy
+                #COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+              run: bundle exec fastlane release
         
