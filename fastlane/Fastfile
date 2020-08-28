@@ -5,7 +5,7 @@ workspace = "CIStudies.xcworkspace/"
   desc "Pull Request verification"
   lane :pull_request_verification do 
     xcversion(version: "~> 11.5.0")
-    iOSSwiftLint
+    runSwiftLint
     cocoapods
     scan(
       workspace: workspace,
@@ -17,12 +17,13 @@ workspace = "CIStudies.xcworkspace/"
   end
 
   desc "Run iOS SwiftLint"
-  private_lane :iOSSwiftLint do
-    swiftlint(
-    mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
-    ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
-  )
+  def runSwiftLint()
+      swiftlint(
+        mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+        ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+    )
   end
+
 
 
  desc "Build App, Testflight"
