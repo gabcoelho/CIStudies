@@ -13,7 +13,7 @@ if has_wip_label || has_wip_title
 end
 
 # Warn when there is a big PR.
-warn("Big PR") if git.lines_of_code > 300
+warn("Big PR") if git.lines_of_code > 500
 
 if github.pr_body.length < 2 && git.lines_of_code > 10
   warn("Please provide a summary in the Pull Request description")
