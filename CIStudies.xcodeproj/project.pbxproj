@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		989E10F024DAF3F900753F60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989E10EE24DAF3F900753F60 /* LaunchScreen.storyboard */; };
 		989E10FB24DAF3FA00753F60 /* CIStudiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E10FA24DAF3FA00753F60 /* CIStudiesTests.swift */; };
 		D641526835052B18BB7B14A3 /* Pods_CIStudiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EDDC82DB4B68F59D1B71875 /* Pods_CIStudiesTests.framework */; };
+		FA696E5925B497EF00499314 /* TestingDocFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA696E5825B497EF00499314 /* TestingDocFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		989E10FC24DAF3FA00753F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4CA50D325129AFD5E6D7BD /* Pods-CIStudies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIStudies.release.xcconfig"; path = "Target Support Files/Pods-CIStudies/Pods-CIStudies.release.xcconfig"; sourceTree = "<group>"; };
 		E6A07AD45F99FD1438059223 /* Pods_CIStudies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CIStudies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA696E5825B497EF00499314 /* TestingDocFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingDocFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,6 @@
 				8CF74119AABCB7B92138AEB0 /* Pods-CIStudiesTests.debug.xcconfig */,
 				86F024DD769167CF02FDA406 /* Pods-CIStudiesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,7 @@
 				989E10EC24DAF3F900753F60 /* Assets.xcassets */,
 				989E10EE24DAF3F900753F60 /* LaunchScreen.storyboard */,
 				989E10F124DAF3F900753F60 /* Info.plist */,
+				FA696E5825B497EF00499314 /* TestingDocFile.swift */,
 			);
 			path = CIStudies;
 			sourceTree = "<group>";
@@ -303,6 +305,7 @@
 				989E10E824DAF3F600753F60 /* ViewController.swift in Sources */,
 				989E10E424DAF3F600753F60 /* AppDelegate.swift in Sources */,
 				989E10E624DAF3F600753F60 /* SceneDelegate.swift in Sources */,
+				FA696E5925B497EF00499314 /* TestingDocFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
