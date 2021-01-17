@@ -11,7 +11,7 @@ jobs:
       - name: Generate Documentation
         uses: SwiftDocOrg/swift-doc@master
         with:
-          inputs: "https://github.com/ZupIT/beagle/tree/master/iOS/Sources/Beagle/Sources"
+          inputs: "https://github.com/ZupIT/beagle/tree/master/iOS/Sources/Beagle/Sources/Action"
           module-name: CIStudies
           output: "Documentation"
       - name: Upload Documentation to Wiki
